@@ -1,0 +1,30 @@
+spring:
+  jpa:
+    # 전송 쿼리 확인
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+      jakarta:
+        persistence:
+          sharedCache:
+            mode: ALL
+    open-in-view: false
+    # 테이블 생성 후에 data.sql 실행
+    defer-datasource-initialization: true
+  h2:
+    console:
+      enabled: true
+  security:
+    oauth2:
+      client:
+        registration:
+          google:
+            client-id: 86298511863-2jopbcp9up4i8t3bum6du3ljgmein3qs.apps.googleusercontent.com
+            client-secret: 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
+            scope:
+              - email
+              - profile
+jwt: # 아래 두 항목은 필수 설정
+  issuer: ajufresh@gmail.com
+  secret_key: study-springboot
