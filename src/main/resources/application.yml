@@ -20,11 +20,6 @@ spring:
       client:
         registration:
           google:
-            client-id: 86298511863-2jopbcp9up4i8t3bum6du3ljgmein3qs.apps.googleusercontent.com
-            client-secret: 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
             scope:
               - email
               - profile
-jwt: # 아래 두 항목은 필수 설정
-  issuer: ajufresh@gmail.com
-  secret_key: study-springboot
